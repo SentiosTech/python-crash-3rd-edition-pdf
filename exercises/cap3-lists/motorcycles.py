@@ -29,3 +29,49 @@ motors.append('yamaha')
 motors.append('suzuki')
 
 print("lista vacia,agregando consecutivamente elementos",motors)
+
+
+"""
+ejemplo de como borrar un elemento con indice especifico de la lista,declaracion del
+"""
+
+del motors[0]
+print(motors)
+
+"""ejemplo de como eliminar el ultimo elemento de la lista y con la habilidad de usar
+ese elemento borrado despues de removerlo de la lista, un uso es saber que es el ultimo
+elemento adquirido o comprado
+"""
+
+popped_motorciclyes = motors.pop()
+
+print(f"la ultima moto tenida fue {popped_motorciclyes.title()}")
+
+
+"""tambien se puede usar el metodo pop con indice, para decidir cual forma de borrar es
+si al eliminar el elemento no se usa mas o se usa"""
+
+
+"""ejemplo de eliminar elementos por medio el valor del elemento, usando el metodo remove"""
+
+motorcycle = ['honda', 'yamaha', 'suzuki', 'ducati']
+
+print(motorcycle)
+
+motorcycle.remove('ducati')
+print(motorcycle)
+
+motorscy = ['honda', 'yamaha', 'suzuki', 'ducati']
+print(motorscy)
+
+too_expensive = 'ducati'
+
+motorscy.remove(too_expensive)
+
+print(motorscy)
+
+print(f"\n una {too_expensive.title} es muy cara para mi")
+
+"""este metodo solo elemina la primera ocurrencia del valor especifico, si hay mas valores
+se necesita un bucle for
+"""
