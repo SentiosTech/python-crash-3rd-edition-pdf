@@ -1,7 +1,7 @@
-"""ejemplo de una funcion"""
+"""ejemplo de una funcion, """
 
-def greet_user():
+def greet_user(userName):
     """Display a simple greeting."""
-    print("Hello!")
+    print(f"Hello!, {userName.title()}")
     
-greet_user()
+greet_user('hitman')
